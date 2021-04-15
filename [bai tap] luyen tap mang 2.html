@@ -5,25 +5,87 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    let a = [
-        [1, 2, 1, 24],
-        [8, 11, 9, 4],
-        [7, 0, 7, 27],
-        [7, 4, 28, 14],
-        [3, 10, 26, 7]
-    ];
-    for ( i = 0; i < a.length; i++){
-        document.write("row"+i)
-        document.write("<br>")
+<!--Bài 1-->
+<!--<script>-->
+<!--    let a = [-->
+<!--        [1, 2, 1, 24],-->
+<!--        [8, 11, 9, 4],-->
+<!--        [7, 0, 7, 27],-->
+<!--        [7, 4, 28, 14],-->
+<!--        [3, 10, 26, 7]-->
+<!--    ];-->
+<!--    for ( i = 0; i < a.length; i++){-->
+<!--        document.write("row"+i)-->
+<!--        document.write("<br>")-->
 
-        for (j = 0; j< a[i].length; j++){
-            document.write('"'+a[i][j]+'"')
-            document.write("<br>")
+<!--        for (j = 0; j< a[i].length; j++){-->
+<!--            document.write('"'+a[i][j]+'"')-->
+<!--            document.write("<br>")-->
 
-        }
-    }
-</script>
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--Bài 2 Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược. Ví dụ, nếu một mảng chứa các ký tự  [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là "162csc"-->
+<!--<script>-->
+<!--    let arr =  [ 'c', 's', 'c', '2', '6', '1' ];-->
+<!--    let a = arr[0];-->
+<!--    let first = 0;-->
+<!--    let last = arr.length - 1;-->
+<!--    while ( first < last ) {-->
+<!--        a = arr[first];-->
+<!--        arr[first] = arr[last];-->
+<!--        arr[last] = a;-->
+<!--        first++;-->
+<!--        last&#45;&#45;;-->
+<!--    }-->
+<!--    document.write(arr.join().split(","))-->
+<!--</script>-->
+
+
+<!--Bài 3  Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng. -->
+<!--<script>-->
+<!--    let arr = [];-->
+<!--    let a = +prompt("nhập số phần tử muốn khai báo trong mảng")-->
+<!--    let count = 0;-->
+<!--    for (i = 0; i < a; i++){-->
+<!--        arr.push(prompt("nhập các phần tử của mảng"))-->
+<!--    }-->
+<!--    for (j = 0; j < arr.length; j++){-->
+<!--        let b = isNaN(arr[j])-->
+<!--        if (b === true){-->
+<!--            count++-->
+<!--        }-->
+<!--    }-->
+<!--    document.write("Số kí tự số trong mảng là "+count)-->
+<!--</script>-->
+
+<!--Bài 4: Viết một chương trình để đếm số từ trong một chuỗi-->
+<!--<script>-->
+<!--    let str = prompt("Nhập chuỗi bất kì");-->
+<!--    let arr = str.split("");-->
+<!--    document.write("Số kí tự trong chuỗi "+str+ "là "+ arr.length)-->
+<!--</script>-->
+
+<!--Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.-->
+<!--<script>-->
+<!--    let str1 = prompt("nhập chuỗi str1");-->
+<!--    let str2 = prompt("nhập chuỗi str2");-->
+<!--    let arr1 = str1.split("");-->
+<!--    let arr2 = str2.split("");-->
+<!--    let same = true;-->
+<!--    for ( i = 0; i < arr1.length; i++){-->
+<!--        if (arr1[i] !== arr2[i]){-->
+<!--            same = false;-->
+<!--            break;-->
+<!--        }-->
+<!--    }-->
+<!--    if (same === true){-->
+<!--        document.write("2 chuỗi đã nhập giống nhau")-->
+<!--    }else-->
+<!--        document.write("2 chuỗi đã nhập khác nhau")-->
+<!--</script>-->
 
 </body>
 </html>
